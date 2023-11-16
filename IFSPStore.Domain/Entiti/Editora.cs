@@ -1,12 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using IFSPLivraria.Domain.Base;
 
-namespace IFSPStore.Domain.Entiti
+
+namespace IFSPLivraria.Domain.Entities
 {
-    internal class Editora
+    public class Editora : BaseEntity<int>
     {
+        public Editora()
+        {
+
+        }
+
+        public Editora(int id, string? nome) : base(id)
+        {
+            Nome = nome;
+        }
+
+        public string? Nome { get; set; }
     }
 }
