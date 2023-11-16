@@ -1,12 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using IFSPLivraria.Domain.Base;
 
-namespace IFSPStore.Domain.Entiti
+
+namespace IFSPLivraria.Domain.Entities
 {
-    internal class Emprestimo
+    public class Emprestimo : BaseEntity<int>
     {
+        public Emprestimo()
+        {
+
+        }
+
+        public Emprestimo(int id, DateTime dataEmprestimo, DateTime dataDevolucao) : base(id)
+        {
+            DataEmprestimo = dataEmprestimo;
+            DataDevolucao = dataDevolucao;
+        }       
+
+        
+        public DateTime DataEmprestimo { get; set; }
+        public DateTime DataDevolucao { get; set; }
+
     }
 }

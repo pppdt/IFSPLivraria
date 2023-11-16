@@ -1,12 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using IFSPLivraria.Domain.Base;
 
-namespace IFSPStore.Domain.Entiti
+public class Livro : BaseEntity<int>
 {
-    internal class Livro
+    public Livro()
     {
+
     }
+    public Livro(int id,string? titulo, string ? autor, string? anoProducao) : base(id)
+    {
+        Titulo = titulo;
+        Autor = autor;
+        AnoProducao = anoProducao;
+    }
+
+    public string? Titulo { get; set; }
+    public string? Autor { get; set; }
+    public string? AnoProducao { get; set;}
+        
 }
