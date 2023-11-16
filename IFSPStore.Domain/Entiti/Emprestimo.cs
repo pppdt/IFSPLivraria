@@ -10,15 +10,17 @@ namespace IFSPLivraria.Domain.Entities
 
         }
 
-        public Emprestimo(int id, DateTime dataEmprestimo, DateTime dataDevolucao) : base(id)
+        public Emprestimo(int id, DateTime dataEmprestimo, DateTime dataDevolucao, Cliente? cliente) : base(id)
         {
             DataEmprestimo = dataEmprestimo;
             DataDevolucao = dataDevolucao;
+            Cliente = cliente;
         }       
 
         
         public DateTime DataEmprestimo { get; set; }
         public DateTime DataDevolucao { get; set; }
+        public Cliente? Cliente { get; set; }
 
     }
 }

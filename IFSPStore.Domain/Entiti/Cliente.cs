@@ -4,14 +4,14 @@ using IFSPLivraria.Domain.Entities;
 
 namespace IFSPLivraria.Domain.Entities
 {
-    public class Usuario : BaseEntity<int>
+    public class Cliente : BaseEntity<int>
     {
-        public Usuario()
+        public Cliente()
         {
 
         }
 
-        public Usuario(int id, string? nome, string? endereco, string? documento, string? bairro, Cidade? cidade) : base(id)
+        public Cliente (int id, string? nome, string? endereco, string? documento, string? bairro, Cidade? cidade) : base (id)
         {
             Nome = nome;
             Endereco = endereco;
