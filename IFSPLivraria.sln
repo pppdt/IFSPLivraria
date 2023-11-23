@@ -9,9 +9,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IFSPLivraria.DDD", "IFSPLiv
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IFSPLivraria.Teste", "IFSPLivraria.Teste", "{FBDA78E1-AC11-4FF2-8E7E-C5B759F612E2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IFSPStore.Domain", "IFSPStore.Domain\IFSPStore.Domain.csproj", "{E59F8D84-5075-4AFF-A60E-608C17B607A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IFSPLivraria.Domain", "IFSPStore.Domain\IFSPLivraria.Domain.csproj", "{E59F8D84-5075-4AFF-A60E-608C17B607A9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IFSPStore.Repository", "IFSPStore.Repository\IFSPStore.Repository.csproj", "{7E02A2C6-BBE4-41C6-915B-702F8D1731F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IFSPLivraria.Repository", "IFSPStore.Repository\IFSPLivraria.Repository.csproj", "{7E02A2C6-BBE4-41C6-915B-702F8D1731F3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IFSPStore.Service", "IFSPStore.Service\IFSPStore.Service.csproj", "{2A07738F-118C-446F-BFCF-42C346B9CC51}"
 EndProject
